@@ -12,6 +12,12 @@ docker-compose up -----from the prject repo
 
 ```
 
+![Building Jar File ](https://github.com/Hansagupta27/PoliticalSpeeches/raw/main/readmeGif/Building%20jar%20file.gif)
+
+
+![Starting docker compose ](https://github.com/Hansagupta27/PoliticalSpeeches/raw/main/readmeGif/Starting%20Docker-compose.gif)
+
+
 _Using Minikube exposed as a service on kubernetes:_ Please run the following commands:
 
 ````
@@ -50,5 +56,10 @@ and provides information about
 3. Speaker who spoke the least number of words
 
 ```
+![One Url input with valid data](https://github.com/Hansagupta27/PoliticalSpeeches/raw/main/readmeGif/One%20url%20Input%20with%20valid%20data.gif)
+
+![Multi Url input with valid data](https://github.com/Hansagupta27/PoliticalSpeeches/raw/main/readmeGif/Two%20urls%20Input%20with%20valid%20data.gif)
+
+![Invalid Data](https://github.com/Hansagupta27/PoliticalSpeeches/raw/main/readmeGif/Invalid%20Data.gif)
 
  
