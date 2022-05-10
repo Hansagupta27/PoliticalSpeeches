@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:8.0.29
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'springjdbc'
+      MYSQL_USER: 'guest_user'
+      MYSQL_PASSWORD: 'guest_password'
+      MYSQL_ROOT_PASSWORD: 'guest_password'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - my-db:/var/lib/mysql
+  political-speeches-app:
+    image: politicalspeeches:latest
+    depends_on:
+      - db
+    build:
+      context: ./
+      dockerfile: DockerFile
+    volumes:
+      - /data/political-speeches-docker-compose-app
+    ports:
+      - '8080:8080'
+volumes:
+  my-db:
